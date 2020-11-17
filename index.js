@@ -15,6 +15,8 @@ server.use(helmet());
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: false }));
 
+server.get('/:id', (req, res) => res.send(`GET route : /${req.params.id}`));
+
 server.use((_req, _res, next) => {
     const err = new Error('Something went wrong...');
     err['status'] = 404;
