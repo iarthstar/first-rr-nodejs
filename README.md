@@ -24,7 +24,7 @@
     $ docker build -t first-rr-nodejs:latest .
     ```
 
-* To watch for changes
+* Run Image
 
     ```bash
     $ docker run -d -p 5000:5000 first-rr-nodejs:latest
