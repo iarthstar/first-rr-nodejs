@@ -5,7 +5,7 @@ const helmet = require('helmet');
 
 const server = express();
 
-server.get('/', (_req, res) => res.status(200).end());
+server.get('/', (_req, res) => res.send('Hello, Sailor...'));
 
 server.enable('trust proxy');
 
